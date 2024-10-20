@@ -1,0 +1,25 @@
+.main-create-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+}
+.card-info > input{
+    margin-top: 20px;
+    border: 1px solid grey;
+    height: 35px;
+    border-radius: 20px;
+
+}
+.card-info > button {
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}

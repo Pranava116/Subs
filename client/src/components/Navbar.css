@@ -1,0 +1,10 @@
+.navbar-wrapper{
+    height: 150px;
+    background-color: plum;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 25px;
+}

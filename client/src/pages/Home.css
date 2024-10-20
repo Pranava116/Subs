@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.card-wrapper{
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+.navbar-wrapper{
+    height: 150px;
+    background-color: plum;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 25px;
+}
+.create-sub{
+    margin-right: 25px;
+}
