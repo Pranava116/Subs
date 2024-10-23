@@ -39,7 +39,6 @@ router.post("/login", async(req, res) => {
         }
         const token = jwt.sign({id: user._id}, Secret_Code)
         res.json({token, userID: user._id})
-        console.log(Secret_Code)
     } catch (error) {
         console.log(error)
     }
