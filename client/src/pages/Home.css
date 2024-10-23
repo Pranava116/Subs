@@ -12,7 +12,7 @@
 }
 .navbar-wrapper{
     height: 150px;
-    background-color: plum;
+    background-color: #7f56ad;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,4 +22,47 @@
 }
 .create-sub{
     margin-right: 25px;
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    text-decoration: none;
+    color: black;
+}
+.login-btn{
+    width: 100px;
+    margin-right: 30px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+}
+.logout-btn{
+    width: 100px;
+    margin-right: 25px;
+    height: 40px;
+    border: none;
+    color: black;
+    border-radius: 10px;
+}
+.create-sub-link{
+    color: black;
+    text-decoration: none;
+}
+.login-link{
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+.login-btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.logout-btn{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.create-sub:hover{
+    opacity: 0.8;
+    cursor: pointer;
 }

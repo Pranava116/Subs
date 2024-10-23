@@ -31,8 +31,8 @@ function Home() {
       <div className='navbar-wrapper'>
         <h1 className='logo'>Subs</h1>
         <div className='button-div'>
-        <button className='create-sub'><Link to="/create">Add Subscription</Link></button>
-        {!cookies.access_token ? (<button><Link to={"/auth"}>Login/Register</Link></button>) : (<button className='logout-btn' onClick={logout}>Logout</button>)}
+        <button className='create-sub'><Link className='create-sub-link' to="/create">Add Subscription</Link></button>
+        {!cookies.access_token ? (<button className='login-btn'><Link className="login-link" to={"/auth"}>Login/Register</Link></button>) : (<button className='logout-btn' onClick={logout}>Logout</button>)}
         </div>
       </div>
         <div className='card-wrapper'>
@@ -41,7 +41,6 @@ function Home() {
           <Card name = {name} img = {img} url = {url} price ={price} _id = {_id}/>
           )
         })}
-          <Card/>
         </div>
     </div>
   )
