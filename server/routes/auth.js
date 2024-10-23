@@ -4,7 +4,7 @@ import User from '../models/UserModel.js';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken'
 const router = express.Router();
-
+const Secret_Code = process.env.SECRET_CODE
 // Route to create a user 
 router.post("/register", async(req, res) => {
     const {username, password} = req.body;
@@ -37,8 +37,9 @@ router.post("/login", async(req, res) => {
         if(!isValidPassword){
             return res.json({message: "The password is wrong"})
         }
-        const token = jwt.sign({id: user._id}, "secret")
+        const token = jwt.sign({id: user._id}, Secret_Code)
         res.json({token, userID: user._id})
+        console.log(Secret_Code)
     } catch (error) {
         console.log(error)
     }
